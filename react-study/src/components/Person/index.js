@@ -1,10 +1,12 @@
 import React from 'react';
+import './index.css';
+ 
 const person = (props) => {
   return (
-  <div>
-    <p>
+  <div className="person">
+    <p onClick={props.click}>
       I'm a { props.name }, 
-      and I am { Math.floor(Math.random() * 30)} years old!
+      and I am { props.age || Math.floor(Math.random() * 30)} years old!
     </p>
     <p>
       { props.children }
