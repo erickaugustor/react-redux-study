@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../Button';
 import Aux from '../../services/wrapper';
 
 const orderSummary = (props) => {
@@ -24,6 +25,10 @@ const orderSummary = (props) => {
       <p>
         Continue to Checkout?
       </p>
+
+      <Button btnType="Danger"  clicked={}>CANCEL</Button>
+      <Button btnType="Success" clicked={}>CONTINUE</Button>
+
     </Aux>
   );
 };
